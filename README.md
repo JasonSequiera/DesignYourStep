@@ -1,2 +1,2 @@
-# DesignYourName
-A Shoe customization Website
+Login Registeration pages done
+attached the html and css files for both
