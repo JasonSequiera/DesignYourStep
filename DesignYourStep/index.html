@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DesignYourStep</title>
+        <style>
+            body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+nav ul li {
+    color: #ffffff;
+    display: grid;
+    place-content: center;
+    margin: 0;
+    padding: 2px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: url('hero-image.png') no-repeat center center;
+    background-size: cover;
+    color: black;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.hero button {
+    background-color: #26a69a;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.category {
+    text-align: center;
+}
+
+.category img {
+    width: 100px;
+    height: 100px;
+}
+
+.category h3 {
+    font-size: 1.2em;
+}
+
+.category p {
+    font-size: 0.9em;
+    color: #616161;
+}
+
+.highlight {
+    text-align: center;
+    padding: 50px;
+    background-color: #ffffff;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.highlight h2 {
+    color: #26a69a;
+}
+
+.highlight button {
+    background-color: #26a69a;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.featured-product {
+    padding: 50px;
+    text-align: center;
+}
+
+.featured-product .product {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.featured-product .product img {
+    width: 200px;
+    height: 200px;
+}
+
+.featured-product .product-details {
+    max-width: 400px;
+    text-align: left;
+}
+
+.featured-product .product-details h3 {
+    color: #26a69a;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #00acc1;
+    color: white;
+}
+
+
+.menu::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: all .5s ease;
+    bottom: 0;
+    left: 0;
+}
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/Logo.png" alt="Nike Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="menu">Home</a></li>
+                    <li><a href="aboutus.php" class="menu">About</a></li>
+                   
+                    <li><a href="products.php" class="menu">Our Products</a></li>
+                    <li><a href="login.php" class="menu">Login</a></li>
+                    <li><a href="register.php" class="menu">Register</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <h1>Step up your Style with Our Trendy Shoes</h1>
+                <p>Find Your Perfect Pair of Shoes Today</p>
+                <button><a href="products.php">Shop Now</a></button>
+            </section>
+            <section class="categories">
+                <div class="category">
+                    <img src="images/CS.jpeg" alt="Casual Shoes">
+                    <h3>Casual Shoes</h3>
+                    <p>These are Casual Shoes</p>
+                </div>
+                <div class="category">
+                    <img src="images/SS.jpeg" alt="Sports Shoes">
+                    <h3>Sports Shoes</h3>
+                    <p>These are Sports Shoes</p>
+                </div>
+                <div class="category">
+                    <img src="images/ES.jpeg" alt="Executive Shoes">
+                    <h3>Executive Shoes</h3>
+                    <p>These are Executive Shoes</p>
+                </div>
+                <div class="category">
+                    <img src="images/KS.jpeg" alt="Kids Shoes">
+                    <h3>Kids Shoes</h3>
+                    <p> These are Kids Shoes</p>
+                </div>
+            </section>
+            <section class="highlight">
+                <h2>We provide High Quality Shoes.</h2>
+                <p>The Nike shoe is known for its sleek design, comfortable fit, and high-quality materials. One of the key features of a Nike shoe is its use of innovative technologies to enhance performance and comfort.</p>
+                <button><a href="products.php">New Arrived</a></button>
+            </section>
+            <section class="featured-product">
+                <h2>Get to Know Our Feature Product</h2>
+                <div class="product">
+                    <img src="images/FS.jpeg" alt="Featured Shoe">
+                    <div class="product-details">
+                        <h3>Best Quality Products</h3>
+                        <p>Overall, Nike shoes are a popular choice for athletes and casual wearers alike, thanks to their combination of comfort and durability.</p>
+                        <h3>Best Giving Pricing</h3>
+                        <p>Whether you're hitting the track or the street, a Nike shoe can help you look and feel your best.</p><br><br>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 DesignYourStep. All rights reserved.</p>
+        </footer>
+    </body>
+    </html>
