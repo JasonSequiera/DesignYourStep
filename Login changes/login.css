@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #4A362B;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    height: 100vh;
+}
+
+.login-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 8px 7.5px 0 #000;
+    width: 600px;
+    height: 550px;
+    max-width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 800px;
+    border: 1.5px solid #000;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.login-header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.login-header p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.footer-text a {
+    color: #5a67d8;
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+.input {
+    font-family: "SF Pro";
+    width: 450px;
+    padding: 0.875rem;
+    font-size: 1rem;
+    border: 1.5px solid #000;
+    border-radius: 0.5rem;
+    box-shadow: 2.5px 3px 0 #000;
+    outline: none;
+    transition: ease 0.25s;
+  }
+  
+.input:focus {
+    box-shadow: 5.5px 7px 0 black;
+}
+  
+.playfair-display-heading {
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+.montserrat-welcome {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 738;
+  font-style: italic;
+}
+
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+      /* margin: 50px auto 0 auto; */
+    padding: auto 15px 15px auto;
+    width: 370px;
+    height: 45px;
+    border-radius: 5px;
+    border: 2px solid var("Black");
+    background-color: var("White");
+    box-shadow: 2.5px 3px 0 #000;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 250ms;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+  
+.button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #926D5D;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+}
+  
+.button:hover {
+    color: #e8e8e8;
+}
+  
+.button:hover::before {
+    width: 100%;
+}
+
+/*.pattern-container {
+    position: relative;
+    background: url('SHOE.png') no-repeat;
+    background-size: 100px 100px; 
+    background-position: 0 0, 200px 200px, 400px 100px, 600px 300px; 
+    background-repeat: no-repeat;  
+    min-height: 100vh;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+.header-image {
+    width: 536px; 
+    height: 537px; 
+    margin-bottom: 2rem; 
+    position: absolute;
+    top: 100px;
+    left: 165px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: moveToPosition 1.5s ease-out forwards;
+}
+
+@keyframes moveToPosition {
+    0% {
+        left: 50%;
+    }
+    100% {
+        left: 200px;
+    }
+}
+ 
+:focus {
+    outline: 0;
+    border-color: #2260ff;
+    box-shadow: 0 0 0 4px #b5c9fc;
+  }
+  
+  .gender div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+    justify-content: center;
+  }
+  
+  .gender input[type="radio"] {
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  
+  .gender input[type="radio"]:checked + span {
+    box-shadow: 0 0 0 0.0625em #E0C5A9;
+    background-color: #E0C5A9;
+    z-index: 1;
+    color: black;
+  }
+  
+  label span {
+    display: block;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 0.375em .75em;
+    position: relative;
+    margin-left: .0625em;
+    box-shadow: 0 0 0 0.0625em #b5bfd9;
+    letter-spacing: .05em;
+    color: black;
+    text-align: center;
+    transition: background-color .5s ease;
+  }
+  
+  label:first-child span {
+    border-radius: .375em 0 0 .375em;
+  }
+  
+  label:last-child span {
+    border-radius: 0 .375em .375em 0;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky; /* This makes the header sticky */
+    top: 0; /* Keeps the header at the top */
+    z-index: 1000; /* Ensures the header stays above other content */
+    width: 100%;
+}
